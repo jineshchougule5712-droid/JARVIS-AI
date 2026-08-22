@@ -1,1 +1,0 @@
-{"name":"jarvis-browser-agent","version":"2.0.0","type":"module","scripts":{"start":"node agent.js"},"dependencies":{"playwright":"^1.52.0"}}
