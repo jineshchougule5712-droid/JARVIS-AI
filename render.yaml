@@ -6,10 +6,20 @@ services:
     dockerfilePath: ./Dockerfile
 
     envVars:
-      - key: DATABASE_URL
+      - key: DB_HOST
         fromDatabase:
           name: jarvis-db
-          property: connectionString
+          property: host
+
+      - key: DB_PORT
+        fromDatabase:
+          name: jarvis-db
+          property: port
+
+      - key: DB_NAME
+        fromDatabase:
+          name: jarvis-db
+          property: database
 
       - key: DB_USER
         fromDatabase:
